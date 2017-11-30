@@ -1,16 +1,15 @@
 {
-    "name": "drupal/lightning_commerce",
+    "name": "drupal/lightning-commerce",
     "description": "Lightning for Commerce distribution provides simply integration with Acquia Commerce Manager.",
     "type": "drupal-profile",
     "license": "GPL-2.0+",
+    "minimum-stability": "dev",
+    "prefer-stable": true,
     "require": {
         "acquia/lightning": "~2.2.0",
         "drupal/core": "~8.4.1",
         "drupal/acq_commerce": "~1.0.0-beta2",
-        "drupal/zurb_foundation": "6.x-dev",
         "drupal/admin_toolbar": "^1.21",
-        "drupal/migrate_tools": "^2.0",
-        "drupal/migrate_plus": "^2.0",
         "drupal/migrate_default_content": "dev-1.x"
     },
     "repositories": [
