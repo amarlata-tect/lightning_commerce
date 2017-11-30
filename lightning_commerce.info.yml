@@ -1,0 +1,19 @@
+name: 'Lightning for Commerce'
+type: profile
+core: '8.x'
+dependencies:
+  - lightning_page
+  - acq_commerce
+  - acq_cart
+  - acq_checkout
+  - acq_customer
+  - acq_payment
+  - acq_promotion
+  - acq_sku
+  - admin_toolbar
+
+themes:
+  - bartik
+
+base profile:
+  name: lightning

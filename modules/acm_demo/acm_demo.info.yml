@@ -1,0 +1,6 @@
+name: 'Acquia Commerce Manager demo'
+type: module
+core: '8.x'
+dependencies:
+  - migrate_default_content
+  - acq_product

@@ -1,0 +1,101 @@
+uuid: b3b0731d-6548-46b5-8be2-afe6369abdeb
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.article.body
+    - field.field.node.article.field_cover_image
+    - field.field.node.article.field_related_products
+    - node.type.article
+  module:
+    - panelizer
+    - text
+    - user
+third_party_settings:
+  panelizer:
+    enable: false
+    custom: false
+    allow: false
+    default: default
+    displays:
+      default:
+        blocks:
+          059ee357-dd8b-4867-a579-96ba0a94e7fd:
+            id: 'entity_field:node:body'
+            label: Body
+            provider: ctools_block
+            label_display: '0'
+            formatter:
+              label: hidden
+              type: text_default
+              settings: {  }
+              third_party_settings: {  }
+              weight: 0
+              region: content
+            region: middle
+            weight: 1
+            context_mapping:
+              entity: '@panelizer.entity_context:entity'
+            uuid: 059ee357-dd8b-4867-a579-96ba0a94e7fd
+          ee9c4630-32fc-4d0b-bbab-d3d4129b5329:
+            id: 'entity_field:node:field_cover_image'
+            label: 'Cover image'
+            provider: ctools_block
+            label_display: '0'
+            region: middle
+            weight: 0
+            formatter:
+              label: above
+              settings:
+                link: true
+              third_party_settings: {  }
+              type: entity_reference_label
+              region: content
+            context_mapping:
+              entity: '@panelizer.entity_context:entity'
+            uuid: ee9c4630-32fc-4d0b-bbab-d3d4129b5329
+        id: panels_variant
+        label: Default
+        uuid: ff062ad0-39aa-40bf-a7d1-6bcaadcd0647
+        weight: 0
+        layout: foundation_1col
+        layout_settings: {  }
+        page_title: '[node:title]'
+        storage_type: panelizer_default
+        storage_id: 'node:article:default:default'
+        builder: ipe
+        pattern: panelizer
+        static_context: {  }
+id: node.article.default
+targetEntityType: node
+bundle: article
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_cover_image:
+    weight: 0
+    label: hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    type: entity_reference_entity_view
+    region: content
+  field_related_products:
+    weight: 2
+    label: above
+    settings:
+      view_mode: teaser
+      link: false
+    third_party_settings: {  }
+    type: entity_reference_entity_view
+    region: content
+hidden:
+  langcode: true
+  links: true

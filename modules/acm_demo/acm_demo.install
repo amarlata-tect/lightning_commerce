@@ -1,0 +1,37 @@
+<?php
+
+use Drupal\migrate\MigrateExecutable;
+use Drupal\migrate\MigrateMessage;
+
+/**
+ * Implements hook_install().
+ */
+function acm_demo_install() {
+  $source_dir = DRUPAL_ROOT . '/' . \Drupal::config('migrate_default_content.settings')->get('source_dir');
+  $editable_mdf_settings = \Drupal::configFactory()->getEditable('migrate_default_content.settings');
+  $editable_mdf_settings->set('source_dir', drupal_get_path('module','acm_demo') . '/migrate_source')->save();
+
+  $migration_service = \Drupal::service('plugin.manager.migration');
+  $migrations = [
+    'migrate_default_content_file',
+    'migrate_default_content_media_image',
+    'migrate_default_content_node_article',
+  ];
+  foreach ($migrations as $migration_id) {
+    /** @var \Drupal\migrate\Plugin\Migration $migration */
+    $migration = $migration_service->createInstance($migration_id);
+
+    if ($migration) {
+      $messages = new MigrateMessage();
+      $executable = new MigrateExecutable($migration, $messages);
+
+      try {
+        $executable->import();
+      }
+      catch (\Exception $e) {
+        \Drupal::logger('migrate_drupal_ui')->error($e->getMessage());
+      }
+    }
+  }
+  $editable_mdf_settings->set('source_dir', $source_dir)->save();
+}
