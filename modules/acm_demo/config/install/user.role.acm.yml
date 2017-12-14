@@ -1,0 +1,37 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - lightning_core
+third_party_settings:
+  lightning_core:
+    description: ''
+id: acm
+label: ACM
+weight: 12
+is_admin: null
+permissions:
+  - 'create acq_product content'
+  - 'create acq_promotion content'
+  - 'delete acq_product revisions'
+  - 'delete acq_promotion revisions'
+  - 'delete any acq_product content'
+  - 'delete any acq_promotion content'
+  - 'delete own acq_product content'
+  - 'delete own acq_promotion content'
+  - 'delete terms in acq_product_category'
+  - 'delete terms in sku_product_option'
+  - 'edit any acq_product content'
+  - 'edit any acq_promotion content'
+  - 'edit own acq_product content'
+  - 'edit own acq_promotion content'
+  - 'edit terms in acq_product_category'
+  - 'edit terms in sku_product_option'
+  - 'restful post acq_categorysync'
+  - 'restful post acq_customer_delete'
+  - 'restful post acq_productsync'
+  - 'restful post acq_promotionsync'
+  - 'revert acq_product revisions'
+  - 'revert acq_promotion revisions'
+  - 'view acq_product revisions'
+  - 'view acq_promotion revisions'

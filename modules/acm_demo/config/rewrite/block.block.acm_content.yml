@@ -1,0 +1,21 @@
+config_rewrite: replace
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - acm
+_core: {  }
+id: acm_content
+theme: acm
+region: content
+weight: 1
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  provider: system
+  label_display: '0'
+visibility: {  }

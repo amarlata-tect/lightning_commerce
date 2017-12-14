@@ -1,0 +1,19 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - page_manager.page.frontpage
+id: frontpage-http_status_code-0
+label: '200'
+variant: http_status_code
+variant_settings:
+  id: http_status_code
+  uuid: 76319761-e341-42fe-afc6-36d28cfc9c4d
+  label: null
+  weight: 0
+  status_code: 200
+page: frontpage
+weight: 0
+selection_criteria: {  }
+selection_logic: and
+static_context: {  }

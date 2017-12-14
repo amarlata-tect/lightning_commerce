@@ -1,0 +1,21 @@
+config_rewrite: replace
+langcode: en
+status: true
+dependencies:
+  theme:
+    - acm
+_core: {  }
+id: acm_local_tasks
+theme: acm
+region: content
+weight: -3
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  provider: core
+  label_display: '0'
+  primary: true
+  secondary: true
+visibility: {  }

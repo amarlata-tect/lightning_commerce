@@ -1,0 +1,19 @@
+config_rewrite: replace
+langcode: en
+status: true
+dependencies:
+  theme:
+    - acm
+_core: {  }
+id: acm_local_actions
+theme: acm
+region: content
+weight: -4
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  provider: core
+  label_display: '0'
+visibility: {  }
