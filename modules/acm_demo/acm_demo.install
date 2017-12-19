@@ -7,6 +7,7 @@ use Drupal\migrate\MigrateMessage;
  * Implements hook_install().
  */
 function acm_demo_install() {
+  // Migrate default content.
   $source_dir = \Drupal::config('migrate_default_content.settings')->get('source_dir');
   $editable_mdf_settings = \Drupal::configFactory()->getEditable('migrate_default_content.settings');
   $editable_mdf_settings->set('source_dir', drupal_get_path('module','acm_demo') . '/migrate_source')->save();
@@ -34,4 +35,9 @@ function acm_demo_install() {
     }
   }
   $editable_mdf_settings->set('source_dir', $source_dir)->save();
+
+  // Enable ACM theme.
+  \Drupal::service('theme_installer')->install(['acm']);
+  \Drupal::service('theme_handler')->setDefault('acm');
+
 }

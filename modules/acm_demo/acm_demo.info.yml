@@ -4,5 +4,6 @@ core: '8.x'
 dependencies:
   - acq_product
   - acq_sku
+  - config_rewrite
   - migrate_default_content
   - page_manager

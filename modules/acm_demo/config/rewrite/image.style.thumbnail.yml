@@ -1,0 +1,14 @@
+config_rewrite: replace
+langcode: en
+status: true
+dependencies: {  }
+name: thumbnail
+label: 'Thumbnail (100×100)'
+effects:
+  e9b867c5-7efc-4be3-b71c-7cf14bde9335:
+    uuid: e9b867c5-7efc-4be3-b71c-7cf14bde9335
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 270
+      height: 202
