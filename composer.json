@@ -1,5 +1,5 @@
 {
-    "name": "acquia/lightning-commerce",
+    "name": "acquia/lightning_commerce",
     "description": "Lightning for Commerce distribution provides simply integration with Acquia Commerce Manager.",
     "type": "drupal-profile",
     "license": "GPL-2.0+",
