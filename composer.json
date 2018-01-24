@@ -13,7 +13,7 @@
         "drupal/admin_toolbar": "^1.21",
         "drupal/migrate_default_content": "~2.0.0@ALPHA",
         "drupal/page_manager": "~4.0.0@BETA",
-        "drupal/taxonomy_menu": "~3.x-dev"
+        "drupal/taxonomy_menu": "3.x-dev"
     },
     "repositories": [
         {
