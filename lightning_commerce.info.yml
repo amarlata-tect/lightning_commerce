@@ -7,6 +7,7 @@ dependencies:
   - acq_cart
   - acq_checkout
   - acq_customer
+  - acq_exception
   - acq_payment
   - acq_promotion
   - acq_sku
