@@ -3,6 +3,11 @@
     "description": "Lightning for Commerce distribution provides simply integration with Acquia Commerce Manager.",
     "type": "drupal-profile",
     "license": "GPL-2.0+",
+    "authors":[{
+        "name": "Acquia Engineering",
+        "homepage": "https://www.acquia.com",
+        "role": "Maintainer"
+    }],
     "minimum-stability": "dev",
     "prefer-stable": true,
     "require": {
