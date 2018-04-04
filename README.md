@@ -4,12 +4,14 @@ We're focusing on providing effortless way for testing Acquia Commerce Manager.
 
 ## Installing Acquia Lightning for Commerce
 The preferred way to install Acquia Lightning for Commerce is using our
-[Composer-based project template](https://github.com/acquia/lightning-project).
+[Composer-based project template](
+https://github.com/acquia/lightning-commerce-project
+).
 It's easy!
 
 ```
 $ composer self-update
-$ composer create-project acquia/lightning-commerce project MY_PROJECT
+$ composer create-project acquia/lightning-commerce-project MY_PROJECT
 ```
 
 If you don't want to use Composer, you can install Acquia Lightning for
@@ -31,7 +33,6 @@ that.
 commerce features. 
 
 ## Known Issues
-
  - Minicart block font color is same as background color in demo theme - you
 can either remove theming for minicart block entirely or override it in your
 theme.
@@ -49,20 +50,20 @@ https://github.com/acquia/lightning-commerce/blob/master/CONTRIBUTING.md
 
 
 ## Copyright and license
-
-   Acquia Lightning for Commerce
+Acquia Lightning for Commerce
    
-   Copyright (C) 2018 Acquia Inc.
+Copyright &copy; 2018 Acquia Inc.
 
-   This program is free software; you can redistribute it and/or modify
-   it under the terms of the GNU General Public License as published by    the Free Software Foundation; either version 2 of the License, or
-   (at your option) any later version.
+This program is free software; you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation; either version 2 of the License, or
+(at your option) any later version.
 
-   This program is distributed in the hope that it will be useful,
-   but WITHOUT ANY WARRANTY; without even the implied warranty of
-   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-   GNU General Public License for more details.
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
 
-   You should have received a copy of the GNU General Public License along
-   with this program; if not, write to the Free Software Foundation, Inc.,
-   51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
+You should have received a copy of the GNU General Public License along
+with this program; if not, write to the Free Software Foundation, Inc.,
+51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
