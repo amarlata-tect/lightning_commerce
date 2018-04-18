@@ -1,4 +1,6 @@
-# Acquia Lightning for Commerce
+# <img src="lightning_commerce.png" width="32"> Acquia Lightning for Commerce
+[![Build Status](https://travis-ci.org/acquia/lightning-commerce.svg?branch=master)](https://travis-ci.org/acquia/lightning-commerce)
+
 Acquia Lightning for Commerce distribution is built on the top of popular Drupal Lightning. 
 We're focusing on providing effortless way for testing Acquia Commerce Manager. 
 
